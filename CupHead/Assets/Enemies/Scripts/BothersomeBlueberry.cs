@@ -19,9 +19,11 @@ public class BothersomeBlueberry : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RaycastHit2D ContactCheck = Physics2D.Raycast(_floorChecker.position, Vector2.right, _rayLength);
+        RaycastHit2D ContactCheck = Physics2D.Raycast(_floorChecker.position, Vector2.down, _rayLength);
 
-        if(ContactCheck == true)
+        Debug.DrawRay(_floorChecker.position, Vector2.down, Color.blue);
+
+        if (ContactCheck == false)
         {
 
             //moves to the left while facing left;
