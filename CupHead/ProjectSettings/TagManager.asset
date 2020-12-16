@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Damage
   - TT_Floor
+  - Ground
+  - bullet
   layers:
   - Default
   - TransparentFX

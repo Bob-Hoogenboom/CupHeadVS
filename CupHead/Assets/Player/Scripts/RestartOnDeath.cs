@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class RestartOnDeath : MonoBehaviour
 {
-    void OnCollisionEnter(Collision coll)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (coll.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        if (other.gameObject.name == "Player")
+            SceneManager.LoadScene("Features-Player");
     }
 }
