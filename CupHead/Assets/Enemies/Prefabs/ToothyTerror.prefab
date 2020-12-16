@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1028049580631065075}
   - component: {fileID: 1028049580631065076}
   - component: {fileID: 1028049580631065077}
+  - component: {fileID: 1585614735}
   m_Layer: 0
   m_Name: ToothyTerror
   m_TagString: Damage
@@ -96,7 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8639bd1f1fff10040ab8a02bc025d27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpVelocity: 100
+  _jumpVelocity: 80
+  animator: {fileID: 1585614735}
+  animeSpeed: 0
 --- !u!50 &1028049580631065076
 Rigidbody2D:
   serializedVersion: 4
@@ -144,3 +147,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.728093, y: 10.474108}
   m_EdgeRadius: 0
+--- !u!95 &1585614735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028049580631065080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e3e2f3cd395fe7b458891169539fcebb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
