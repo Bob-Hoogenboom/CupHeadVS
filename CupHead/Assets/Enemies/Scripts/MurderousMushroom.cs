@@ -7,6 +7,7 @@ public class MurderousMushroom : MonoBehaviour
     [SerializeField] private bool _isAttacking;
     public float gap;
 
+
     public GameObject player;
     public GameObject bullet;
 
@@ -50,7 +51,10 @@ public class MurderousMushroom : MonoBehaviour
     //SHOTS FIRED! and reset
     IEnumerator SporeShoot()
     {
-        Instantiate(bullet, transform.position, transform.rotation);
+        Vector3 relativePos = player.transform.position - transform.position;
+        GameObject myBullet = Instantiate(bullet, transform.position, Quaternion.LookRotation(relativePos, Vector3.up));
+        
+        // myBullet.transform.right = transform.position - player.transform.position;
 
         shootTimer = 0;
 
@@ -59,4 +63,12 @@ public class MurderousMushroom : MonoBehaviour
     }
 
 }
+
+
+//jesse bullet transform
+
+/*Vector3 relativePos = player.transform.position - transform.position;
+Vector2 relativePos2D = new Vector2(relativePos.x, relativePos.y);
+GameObject myBullet = Instantiate(bullet, transform.position, Quaternion.LookRotation(relativePos2D, Vector3.up));
+(myBullet.transform).rotation.eulerAngles = new Vector3(myBullet.transform.rotation.x, 0, 0);*/
 
