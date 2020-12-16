@@ -10,7 +10,7 @@ public class GasCloud : MonoBehaviour
 
     private void Start()
     {
-        _rb.velocity = transform.right * _cloudSpeed;
+        _rb.velocity = transform.forward * _cloudSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)

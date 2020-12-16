@@ -351,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973285813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -124.1, y: -9.9, z: -6.9960938}
+  m_LocalPosition: {x: -118.4, y: -9, z: -6.9960938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -588,11 +588,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1028049580631065079, guid: 25d65dca78ffba7488974e5d423005ab,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1028049580631065080, guid: 25d65dca78ffba7488974e5d423005ab,
         type: 3}
       propertyPath: m_Name
@@ -662,11 +657,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2187537404399335229, guid: 30094b8e84057a742a4a4889b5489bc7,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2187537404399335230, guid: 30094b8e84057a742a4a4889b5489bc7,
         type: 3}
       propertyPath: m_Name
@@ -681,11 +671,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2251256922905346080, guid: 4c302b54b686883408869554206f46b7,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2251256922905346081, guid: 4c302b54b686883408869554206f46b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -760,20 +745,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
-    - target: {fileID: 6377954089031767703, guid: 42b951b3ac717c14dbb9942b1aedc6e0,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6377954089031767720, guid: 42b951b3ac717c14dbb9942b1aedc6e0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -78.8
+      value: -103.1
       objectReference: {fileID: 0}
     - target: {fileID: 6377954089031767720, guid: 42b951b3ac717c14dbb9942b1aedc6e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -6.1
       objectReference: {fileID: 0}
     - target: {fileID: 6377954089031767720, guid: 42b951b3ac717c14dbb9942b1aedc6e0,
         type: 3}
