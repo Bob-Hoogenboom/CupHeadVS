@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2251256922905346083}
   - component: {fileID: 2251256922905346082}
   - component: {fileID: 2251256922905346085}
+  - component: {fileID: 542191217}
   m_Layer: 0
   m_Name: BothersomeBlueberry
   m_TagString: Damage
@@ -174,7 +175,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc9fb919e1b3fe4387a0190ecc1cb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 7
   _rayLength: 31
   _moveRight: 1
   _floorChecker: {fileID: 2251256922722364234}
+  animator: {fileID: 542191217}
+--- !u!95 &542191217
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2251256922905346084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33cc0813acbca1a4c9b5c3cb42f3aee3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

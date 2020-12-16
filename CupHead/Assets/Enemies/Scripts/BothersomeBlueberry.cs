@@ -9,6 +9,8 @@ public class BothersomeBlueberry : MonoBehaviour
     [SerializeField] private bool _moveRight = true;
     [SerializeField] private Transform _floorChecker;
 
+    public Animator animator;
+
 
     void Update()
     {
@@ -29,16 +31,22 @@ public class BothersomeBlueberry : MonoBehaviour
             //moves to the left while facing left;
             if(_moveRight == true)
             {
+                animator.SetTrigger("Turn");
                 transform.eulerAngles = new Vector2(0, -180);
+                
                 _moveRight = false;
+
             }
 
 
             //moves to the right while facing right;
             else
             {
+                animator.SetTrigger("Turn");
                 transform.eulerAngles = new Vector2(0, 0);
+                
                 _moveRight = true;
+
             }
         }
 
