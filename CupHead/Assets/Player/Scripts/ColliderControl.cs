@@ -20,7 +20,7 @@ public class ColliderControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(playerleftshift.isGrounded == false)
         {

@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int maxhealth = 1;
+    public int currenthealth = 0;
+
+
+
     void Start()
     {
-        
+        currenthealth = maxhealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if (col.gameObject.tag == "bullet")
+        {
+            print("AAAAUUUUU IK GA MN MAMA BELLEN!");
+            currenthealth -= 1;
+
+            if(currenthealth == 0)
+            {
+                print("HARTSTIKKE DOOD");
+                GameObject.Destroy(gameObject);
+            }
+        }
     }
 }

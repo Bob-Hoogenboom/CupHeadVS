@@ -8,6 +8,7 @@ TagManager:
   - TT_Floor
   - Ground
   - bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

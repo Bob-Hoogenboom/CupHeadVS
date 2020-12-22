@@ -51,9 +51,10 @@ public class MurderousMushroom : MonoBehaviour
     //SHOTS FIRED! and reset
     IEnumerator SporeShoot()
     {
+        
         Vector3 relativePos = player.transform.position - transform.position;
         GameObject myBullet = Instantiate(bullet, transform.position, Quaternion.LookRotation(relativePos, Vector3.up));
-        
+
         // myBullet.transform.right = transform.position - player.transform.position;
 
         shootTimer = 0;

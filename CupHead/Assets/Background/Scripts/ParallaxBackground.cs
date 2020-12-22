@@ -6,11 +6,11 @@ public class ParallaxBackground : MonoBehaviour
 {
     [SerializeField] private Vector2 parallaxEffectMultiplier;
     [SerializeField] private bool infiniteHorizontal;
-  //  [SerializeField] private bool infiniteVertical;
+    [SerializeField] private bool infiniteVertical;
     private Transform cameraTransform;
     private Vector3 lastCameraPosition;
     private float textureUnitSizeX;
-   // private float textureUnitSizeY;
+   private float textureUnitSizeY;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class ParallaxBackground : MonoBehaviour
         Sprite sprite = GetComponent<SpriteRenderer>().sprite;
         Texture2D texture = sprite.texture;
         textureUnitSizeX = texture.width / sprite.pixelsPerUnit;
-     //   textureUnitSizeY = texture.height / sprite.pixelsPerUnit;
+        textureUnitSizeY = texture.height / sprite.pixelsPerUnit;
     }
 
     private void Update()
@@ -36,13 +36,13 @@ public class ParallaxBackground : MonoBehaviour
             }
         }
 
-        //if (infiniteVertical)
-        //{  
-         //   if (Mathf.Abs(cameraTransform.position.y - transform.position.y) >= textureUnitSizeY)
-         //   {
-         //   float offsetPositionY = (cameraTransform.position.y - transform.position.y) % textureUnitSizeY;
-         //   transform.position = new Vector3(transform.position.x, cameraTransform.position.y + offsetPositionY);
-         //   }
-       // }
+        if (infiniteVertical)
+        {  
+            if (Mathf.Abs(cameraTransform.position.y - transform.position.y) >= textureUnitSizeY)
+            {
+            float offsetPositionY = (cameraTransform.position.y - transform.position.y) % textureUnitSizeY;
+            transform.position = new Vector3(transform.position.x, cameraTransform.position.y + offsetPositionY);
+            }
+        }
     }
 }
